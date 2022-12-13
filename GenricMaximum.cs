@@ -3,60 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace GenericsProblem
+namespace Day_13_Generics
 {
-    class GenricMaximum<T> where T : IComparable
+    public class GenericMaximum<T> where T : IComparable
     {
-        public T firstValue, secondValue, thirdValue;
-
-        public GenricMaximum(T firstValue, T secondValue, T thirdValue)
+        public T[] value;
+        public GenericMaximum(T[] value)
         {
-            this.firstValue = firstValue;
-            this.secondValue = secondValue;
-            this.thirdValue = thirdValue;
-        }
-        public static T testMaximum<T>(T firstValue, T secondValue, T thirdValue) where T : IComparable
-        {
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
-                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
-                firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) >= 0)
-            {
-                return firstValue;
-            }
-            if (secondValue.CompareTo(thirdValue) > 0 && secondValue.CompareTo(firstValue) > 0 ||
-                 secondValue.CompareTo(thirdValue) >= 0 && secondValue.CompareTo(firstValue) > 0 ||
-                 secondValue.CompareTo(thirdValue) > 0 && secondValue.CompareTo(firstValue) >= 0)
-            {
-                return secondValue;
-            }
-            if(thirdValue.CompareTo(secondValue) > 0 && thirdValue.CompareTo(firstValue) > 0 ||
-                thirdValue.CompareTo(secondValue) >= 0 && thirdValue.CompareTo(firstValue) > 0 ||
-                thirdValue.CompareTo(secondValue) > 0 && thirdValue.CompareTo(firstValue) >= 0)
-            {
-                return thirdValue;
-            }
-            throw new Exception("firstNumber,secondNumber and thirdNumber are same");
-        
-    }
-        public T maxMethod()
-        {
-            T max = GenricMaximum<T>.testMaximum(this.firstValue, this.secondValue, this.thirdValue);
-            return max;
+            this.value = value;
         }
 
-
-        public static T maxValue(params T[] values)
-        {
-            T[] sortedValues = Sort(values);
-            return sortedValues[^1];
-        }
-
-
-        public static T[] Sort(T[] values)
+        public T[] Sort(T[] values)
         {
             Array.Sort(values);
             return values;
+
+        }
+
+
+        public T MaxValue(params T[] values)
+        {
+            var sorted_values = Sort(values);
+
+            return sorted_values[sorted_values.Length - 1];
+        }
+
+        public T MaxMethod()
+        {
+            var max = MaxValue(this.value);
+            return max;
+        }
+
+       
+        public void PrintMaxValue()
+        {
+            var max = MaxValue(this.value);
+            Console.WriteLine("Maximum value is " + max);
         }
     }
 }
