@@ -1,0 +1,15 @@
+C:\RFP-231-Assg\GenericsProblem\bin\Debug\net6.0\GenericsProblem.exe
+C:\RFP-231-Assg\GenericsProblem\bin\Debug\net6.0\GenericsProblem.deps.json
+C:\RFP-231-Assg\GenericsProblem\bin\Debug\net6.0\GenericsProblem.runtimeconfig.json
+C:\RFP-231-Assg\GenericsProblem\bin\Debug\net6.0\GenericsProblem.dll
+C:\RFP-231-Assg\GenericsProblem\bin\Debug\net6.0\GenericsProblem.pdb
+C:\RFP-231-Assg\GenericsProblem\obj\Debug\net6.0\GenericsProblem.csproj.AssemblyReference.cache
+C:\RFP-231-Assg\GenericsProblem\obj\Debug\net6.0\GenericsProblem.GeneratedMSBuildEditorConfig.editorconfig
+C:\RFP-231-Assg\GenericsProblem\obj\Debug\net6.0\GenericsProblem.AssemblyInfoInputs.cache
+C:\RFP-231-Assg\GenericsProblem\obj\Debug\net6.0\GenericsProblem.AssemblyInfo.cs
+C:\RFP-231-Assg\GenericsProblem\obj\Debug\net6.0\GenericsProblem.csproj.CoreCompileInputs.cache
+C:\RFP-231-Assg\GenericsProblem\obj\Debug\net6.0\GenericsProblem.dll
+C:\RFP-231-Assg\GenericsProblem\obj\Debug\net6.0\refint\GenericsProblem.dll
+C:\RFP-231-Assg\GenericsProblem\obj\Debug\net6.0\GenericsProblem.pdb
+C:\RFP-231-Assg\GenericsProblem\obj\Debug\net6.0\GenericsProblem.genruntimeconfig.cache
+C:\RFP-231-Assg\GenericsProblem\obj\Debug\net6.0\ref\GenericsProblem.dll
