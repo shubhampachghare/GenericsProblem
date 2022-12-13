@@ -8,9 +8,6 @@ namespace GenericsProblem
         {
             Console.WriteLine("Welcome to GenericsProblem");
 
-
-
-
         }
     }
 }
